@@ -1,0 +1,12 @@
+  body{
+    background: url('imagenes/Tecnológico-de-Antioquia.jpg')no-repeat center;
+    background-size: cover;
+  }
+   
+  form{
+    margin-top: 20px;
+    border: solid;
+    border-radius: 20px;
+    max-width: 400px;
+    background: rgb(0, 0, 0 , 0.4); 
+  }

@@ -1,0 +1,17 @@
+{
+  "name": "tdea",
+  "version": "1.0.1",
+  "description": "primera versión de desarroollo web para el tdea",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "keeking jr_m@outlook.es",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "express": "^4.17.1",
+    "hbs": "^4.0.4",
+    "yargs": "^13.2.4"
+  }
+}
