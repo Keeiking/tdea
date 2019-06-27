@@ -1,48 +1,65 @@
 {{>header}}
 
 <body>
-<form style="margin-top: 40px; background: rgb(0, 0, 0 , 0.4); ">
+<form method="post" action="/show" style="margin-top: 20px; background: rgb(0, 0, 0 , 0.4); ">
+
+  <h1 style="text-align: center; color: white">Crear curso</h1>
+  <h3 style="text-align: center; color : white">Para crear un nuevo curso registre los datos del formulario </h3>
+
   <div class="row">
     <div class="col">
     	<div class="form-group">
     		<label>id del curso :</label>
-    		<input type="number" class="form-control" placeholder="id del curso">
+    		<input type="number" name="id" class="form-control" placeholder="id del curso">
   		</div>
 
-  <div class="form-group">
-    <label>Modalidad</label>
-    <select class="form-control">
-      	<option>Presencial</option>
-      	<option>Virtual</option>
-    </select>
-  </div>
+      <div class="form-group">
+        <label>Modalidad</label>
+        <select name="modalidad" class="form-control">
+          	<option>Presencial</option>
+          	<option>Virtual</option>
+        </select>
+      </div>
 
-  <div class="form-group">
-    <label>Descripción</label>
-    <textarea class="form-control" rows="3"></textarea>
-  </div>
-</div>
+      <div class="form-group">
+        <label>Descripción</label>
+        <textarea type="text" name="descripcion" class="form-control" rows="3"></textarea>
+      </div>
+    </div>
 
     <div class="col">
        	<div class="form-group">
-       		<label>Nombre :</label>
-    		<input type="text" class="form-control" placeholder="Nombre del curso">
-  		</div>
+       	  <label>Nombre :</label>
+    		  <input type="text" name="nombre" class="form-control" placeholder="Nombre del curso">
+  		  </div>
 
-  		<div class="form-group">
-  			<label>Valor :</label>
-    		<input type="decimal" class="form-control" placeholder="Valor del curso">
-  		</div>
+  		  <div class="form-group">
+  			 <label>Valor :</label>
+    		  <input type="number" name="valor" class="form-control" placeholder="Valor del curso">
+  		  </div>
 
-  		<div class="form-group">
-    		<label>Intensidad Horaria:</label>
-    		<input type="number" class="form-control">
-  		</div>
-  		</div>
+  		  <div class="form-group">
+    		  <label>Intensidad Horaria:</label>
+    		  <input type="number" name="intensidad" class="form-control">
+  		  </div>
+  		
+        <div class="form-group">
+          <label>Estado</label>
+          <select name="estado" class="form-control">
+              <option>abierto</option>
+              <option>cerrado</option>
+          </select>
+        </div>
+         <button class="btn btn-primary">crear curso</button> 
+      </div>  
     </div>
+     
 </div>
+
 </form>
 
+
+ 
 
 {{>footer}}
 
